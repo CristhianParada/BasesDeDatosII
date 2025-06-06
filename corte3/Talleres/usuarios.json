@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Ana Torres",
+    "edad": 25,
+    "gmail": "ana.torres@gmail.com",
+    "descripcion": "Amante del café y la fotografía.",
+    "like": 120
+  },
+  {
+    "nombre": "luis villamizar",
+    "edad": 32,
+    "gmail": "luisVill@hotmail.com",
+    "descripcion": "Desarrollador backend y ciclista.",
+    "like": 85
+  },
+  {
+    "nombre": "Lucí Jaimes",
+    "edad": 29,
+    "gmail": "lucJai@gmail.com",
+    "descripcion": "Estudiante de arte.",
+    "like": 200
+  },
+  {
+    "nombre": "Miguel Rico",
+    "edad": 29,
+    "gmail": "Ricoang@gmail.com",
+    "descripcion": "Gamer y creador de contenido.",
+    "like": 300
+  },
+  {
+    "nombre": "Stefani gomez",
+    "edad": 23,
+    "gmail": "Stefani@yahoo.com",
+    "descripcion": "Fotógrafa.",
+    "like": 150
+  },
+  {
+    "nombre": "Pedro Enrique",
+    "edad": 35,
+    "gmail": "pedroenrz@gmail.com",
+    "descripcion": "Músico y fanático de los libros.",
+    "like": 95
+  },
+  {
+    "nombre": "Valentina heredia",
+    "edad": 21,
+    "gmail": "valen@gmail.com",
+    "descripcion": "Influencer de moda.",
+    "like": 400
+  },
+  {
+    "nombre": "Andrés mendoza",
+    "edad": 27,
+    "gmail": "andresMen@outlook.com",
+    "descripcion": "Viajar y escribir son mi pasión.",
+    "like": 180
+  },
+  {
+    "nombre": "Camila Vargas",
+    "edad": 22,
+    "gmail": "camiVar@gmail.com",
+    "descripcion": "Fan del cine clásico.",
+    "like": 130
+  },
+  {
+    "nombre": "Lyam balderrama",
+    "edad": 30,
+    "gmail": "lyaa@gmail.com",
+    "descripcion": "Programador.",
+    "like": 170
+  }
+]

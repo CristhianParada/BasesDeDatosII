@@ -1,0 +1,95 @@
+{
+  "titulo": "TUTORIAL DE CONSULTAS EN MONGODB (Colección: usuarios)",
+  "coleccion": "usuarios",
+  "operadores_relacionales": [
+    {
+      "operador": "$eq",
+      "descripcion": "igual a",
+      "sintaxis": "{ campo: { $eq: valor } }",
+      "ejemplo": "db.usuarios.find({ edad: { $eq: 25 } })",
+      "comentario": "Buscar usuarios con edad igual a 25"
+    },
+    {
+      "operador": "$ne",
+      "descripcion": "distinto de",
+      "sintaxis": "{ campo: { $ne: valor } }",
+      "ejemplo": "db.usuarios.find({ like: { $ne: 100 } })",
+      "comentario": "Buscar usuarios con likes distintos de 100"
+    },
+    {
+      "operador": "$gt",
+      "descripcion": "mayor que",
+      "sintaxis": "{ campo: { $gt: valor } }",
+      "ejemplo": "db.usuarios.find({ like: { $gt: 150 } })",
+      "comentario": "Buscar usuarios con más de 150 likes"
+    },
+    {
+      "operador": "$lt",
+      "descripcion": "menor que",
+      "sintaxis": "{ campo: { $lt: valor } }",
+      "ejemplo": "db.usuarios.find({ edad: { $lt: 25 } })",
+      "comentario": "Buscar usuarios menores de 25 años"
+    },
+    {
+      "operador": "$gte",
+      "descripcion": "mayor o igual que",
+      "sintaxis": "{ campo: { $gte: valor } }",
+      "ejemplo": "db.usuarios.find({ like: { $gte: 200 } })",
+      "comentario": "Buscar usuarios con 200 o más likes"
+    },
+    {
+      "operador": "$lte",
+      "descripcion": "menor o igual que",
+      "sintaxis": "{ campo: { $lte: valor } }",
+      "ejemplo": "db.usuarios.find({ edad: { $lte: 30 } })",
+      "comentario": "Buscar usuarios de 30 años o menos"
+    },
+    {
+      "operador": "$in",
+      "descripcion": "dentro de",
+      "sintaxis": "{ campo: { $in:['valor1','valor2'] } }",
+      "DATOIMPORTANTE": "en la sintaxis y el ejemplo esta los valores a buscar con comillas simples, sin embargo, tiene que ser si o si con comillas dobles",
+      "ejemplo": "db.usuarios.find({nombre:{$in:['Andrés mendoza','Pedro Enrique']}})",
+      "comentario": "Buscar usuarios que tengan de nombre Andrés mendoza y Pedro Enrique"
+    },
+    {
+      "operador": "$nin",
+      "descripcion": "no dentro de ",
+      "sintaxis": "{ campo: { $in:['valor1','valor2'] } }",
+      "DATOIMPORTANTE": "en la sintaxis y el ejemplo esta los valores a no buscar con comillas simples, sin embargo, tiene que ser si o si con comillas dobles",
+      "ejemplo": "db.usuarios.find({nombre:{$nin:['Andrés mendoza','Pedro Enrique']}})",
+      "comentario": "Buscar usuarios en donde no aparezca Andrés mendoza ni Pedro Enrique"
+    }
+  ],
+  "operadores_logicos": [
+    {
+      "operador": "$and",
+      "descripcion": "todas las condiciones se cumplen",
+      "sintaxis": "{ $and: [ { campo1: valor1 }, { campo2: { $operador: valor } } ] }",
+      "ejemplo": "db.usuarios.find({ $and: [ { edad: { $gte: 25 } }, { like: { $gt: 100 } } ] })",
+      "comentario": "Buscar usuarios con edad mayor o igual a 25 Y más de 100 likes"
+    },
+    {
+      "operador": "$or",
+      "descripcion": "una u otra condición se cumple",
+      "sintaxis": "{ $or: [ { campo1: valor }, { campo2: valor } ] }",
+      "ejemplo": "db.usuarios.find({ $or: [ { like: { $lt: 100 } }, { edad: { $gt: 30 } } ] })",
+      "comentario": "Buscar usuarios con menos de 100 likes o más de 30 años"
+    },
+    {
+      "operador": "$not",
+      "descripcion": "niega un operador",
+      "sintaxis": "{ campo: { $not: { $operador: valor } } }",
+      "ejemplo": "db.usuarios.find({ like: { $not: { $gt: 150 } } })",
+      "comentario": "Buscar usuarios que NO tienen más de 150 likes"
+    },
+    {
+      "operador": "$nor",
+      "descripcion": "ninguna condición se cumple",
+      "sintaxis": "{ $nor: [ { campo1: valor }, { campo2: valor } ] }",
+      "ejemplo": "db.usuarios.find({ $nor: [ { edad: { $lt: 25 } }, { like: { $gt: 300 } } ] })",
+      "comentario": "Buscar usuarios que NO son menores de 25 años y NO tienen más de 300 likes"
+    }
+    
+  ]
+}
