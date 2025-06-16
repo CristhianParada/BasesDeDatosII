@@ -21,7 +21,11 @@ db.pokemons.find(
 
 
 
-
+/*  documentos anidados
+son aquellos que contienen otros documentos como valores de sus campos. 
+Esto permite representar relaciones complejas entre datos dentro de un 
+mismo documento, en lugar de usar referencias a otros documentos como en las bases de datos relacionales. 
+*/
 
 //use bokuNoHero
 db.createCollection("heroes")
